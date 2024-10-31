@@ -1,0 +1,19 @@
+body{
+    margin: 0; /* Remove default body margin */
+    height: 100vh; /* Full viewport height */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+
+}
+
+#game{
+    background-color: antiquewhite;
+    align-self: center;
+    border: 2px solid #333;
+    background-image: url(diwali\ bg.jpg);
+    background-size: 100% 100%;
+    margin-top: 15vh;
+}

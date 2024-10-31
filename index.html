@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diwali Game</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; /* Full viewport height */
+            background-color: aqua; /* Aqua background */
+            margin: 0; /* Remove default margin */
+        }
+        #game {
+            background-color: antiquewhite;
+            border: 2px solid #333;
+            margin-bottom: 20px; /* Spacing between canvas and button */
+            position: relative; /* Position relative for absolute score */
+        }
+        #score {
+            font-weight: bold; /* Bold score */
+            color: white; /* White score color */
+            text-shadow: 1px 1px 2px black; /* Black outline */
+            font-size: 24px; /* Bigger font size for score */
+            position: absolute; /* Absolute position */
+            top: 20px; /* Position above the canvas */
+            left: 50%; /* Center horizontally */
+            transform: translateX(-50%); /* Centering adjustment */
+        }
+        #start-btn {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px; /* Margin for spacing */
+            cursor: pointer; /* Change cursor on hover */
+            border: none; /* Remove default border */
+            border-radius: 5px; /* Rounded corners */
+            background-color: #4caf50; /* Green background */
+            color: white; /* White text color */
+            transition: background-color 0.3s; /* Smooth transition for hover */
+        }
+        #start-btn:hover {
+            background-color: #45a049; /* Darker green on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <canvas id="game" width="650" height="450"></canvas>
+    <div id="score">Score: 0</div> <!-- Score display -->
+    <button id="start-btn" disabled>Start Game</button>
+
+    <script src="logic.js"></script> <!-- Your JavaScript file -->
+</body>
+</html>
